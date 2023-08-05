@@ -1,3 +1,7 @@
 export default function Header() {
-  return;
+  return (
+    <div className="header">
+      <img src="/public/logo.png" alt="logo" className="logo" />
+    </div>
+  );
 }
