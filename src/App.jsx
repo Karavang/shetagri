@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import "./index.scss";
+import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import "./index.scss";
+import Methods from "./components/Methods";
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/methods" element={<Methods />} />
       </Routes>
     </>
   );
