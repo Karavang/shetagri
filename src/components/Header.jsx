@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="header">
       <NavLink to="/">
-        <img src="/logo.png" alt="logo" className="logo" />
+        <img src="/public/logo.png" alt="logo" className="logo" />
       </NavLink>
       <ul className="header-list">
         <li>
