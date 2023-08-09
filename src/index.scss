@@ -14,7 +14,8 @@ h5 {
   margin: 0;
   padding: 0;
 }
-p {
+p,
+pre {
   font-size: 28px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -114,4 +115,7 @@ p {
 .services-text {
   margin-top: 16px;
   line-height: 40px;
+}
+.pre-formatted-text {
+  white-space: pre-wrap;
 }
