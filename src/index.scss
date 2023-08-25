@@ -60,22 +60,14 @@ pre {
 }
 .hero {
   background-image: url("/public/hero.jpg");
-
+  border-radius: 10px 10px 0 0;
   background-size: cover;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
 }
-.home-about {
-  margin: 16px 10%;
-  padding: 8px 24px;
-  background-color: #ffeed2;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-size: 28px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
+
 .hero-indiv {
   padding: 8% 10%;
 }
@@ -118,4 +110,20 @@ pre {
 }
 .pre-formatted-text {
   white-space: pre-wrap;
+}
+.homestyle {
+  margin: 16px 5%;
+  background-color: #ffeed2;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.home-about {
+  padding: 8px 24px;
+
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }

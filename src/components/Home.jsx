@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
-      <section className="hero">
+    <div className="homestyle">
+      <div className="hero">
         <div className="hero-indiv">
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>
@@ -9,8 +9,8 @@ export default function Home() {
             `Хто хоче - шукає спосіб, хто не хоче - виправдання.` <br /> Сократ
           </p>
         </div>
-      </section>
-      <section className="home-about ">
+      </div>
+      <div className="home-about ">
       <h2 className="flexator home-hi">🙌 Вітаю вас, шановні друзі!</h2>
         <pre className="pre-formatted-text">
        {`   Я - Тетяна Шестак, психолог, психотерапевт, сексолог.
@@ -40,7 +40,7 @@ export default function Home() {
 
 👍 Подаруйте собі шанс на зміни та гармонію. Запишіться на консультацію вже зараз!`}
         </pre>
-      </section>
+      </div>
     </div>
   );
 }
