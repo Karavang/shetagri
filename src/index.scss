@@ -28,9 +28,13 @@ pre {
 .header {
   display: flex;
   justify-content: space-between;
-
+  position: sticky;
+  top: 0;
+  background-color: #fff9ef;
   padding: 0 32px;
+  transition: position 0.3s ease-in-out;
 }
+
 .logo {
   padding: 8px;
   width: 60px;
