@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div>
+    <div className="homestyle">
       <section className="hero">
         <div className="hero-indiv">
           <h1 className="hero-title">Тетяна Шестак</h1>

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import "./index.scss";
 import Methods from "./components/Methods";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/methods" element={<Methods />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );

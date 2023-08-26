@@ -18,7 +18,9 @@ export default function Header() {
           </NavLink>
         </li>
         <li>
-          <NavLink className="header-list-el">Блог</NavLink>
+          <NavLink className="header-list-el" to="/blog">
+            Блог
+          </NavLink>
         </li>
         <li>
           <NavLink className="header-list-el">Клуб `Шоколад`</NavLink>
