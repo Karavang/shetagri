@@ -6,7 +6,7 @@ export default function AboutMe() {
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>
           <p className="hero-p">
-            ` Хочеш стати щастливим – будь ним.` <br />
+            ` Хочеш стати щасливим – будь ним.` <br />
             Козьма Прутков
           </p>
         </div>

@@ -132,3 +132,23 @@ pre {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+.list-methods {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.title-list-methods {
+  margin-top: 32px;
+}
+.list-methods-mini {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  li {
+    list-style-type: disc;
+  }
+}
+.fat {
+  font-weight: 700;
+}
