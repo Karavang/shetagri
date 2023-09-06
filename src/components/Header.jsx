@@ -1,31 +1,13 @@
 import { NavLink } from "react-router-dom";
-
+import { MobileHeader } from "./MobileH";
+import HeaderList from "./ListHeader";
 export default function Header() {
   return (
     <div className="header">
       <NavLink to="/">
         <div className="logo" />
       </NavLink>
-      <ul className="header-list">
-        <li>
-          <NavLink className="header-list-el" to="/about">
-            Про мене
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="header-list-el" to="/methods">
-            Методи
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="header-list-el" to="/blog">
-            Блог
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="header-list-el">Клуб `Шоколад`</NavLink>
-        </li>
-      </ul>
+      {window.innerWidth > 830 ? <HeaderList /> : <MobileHeader />}
     </div>
   );
 }

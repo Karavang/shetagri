@@ -152,3 +152,40 @@ pre {
 .fat {
   font-weight: 700;
 }
+.dropButton {
+  width: 160px;
+  color: #ffeed2;
+  display: flex;
+  align-items: center;
+  button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-list {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff9ef;
+  }
+  #dropdown-basic-button {
+    color: black;
+    font-size: 18px;
+    --bs-btn-color: #000;
+    --bs-btn-bg: #f9b233;
+    --bs-btn-border-color: #f9b233;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f9b233;
+    --bs-btn-hover-border-color: #f9b233;
+    --bs-btn-focus-shadow-rgb: 217, 164, 6;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #f9b233;
+    --bs-btn-active-border-color: #f9b233;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #f9b233;
+    --bs-btn-disabled-border-color: #f9b233;
+  }
+}
