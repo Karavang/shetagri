@@ -31,7 +31,7 @@ pre {
   position: sticky;
   top: 0;
   background-color: #fff9ef;
-  padding: 0 32px;
+  padding: 0 5%;
   transition: position 0.3s ease-in-out;
 }
 
@@ -46,6 +46,7 @@ pre {
   display: flex;
   align-items: center;
   gap: 32px;
+  margin: 0;
   margin-right: 140px;
 }
 .header-list-el {
