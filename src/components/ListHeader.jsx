@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 export default function HeaderList() {
   return (
     <ul className="header-list">
-      <li>
+      {/* <li>
         <NavLink className="header-list-el" to="/about">
           Про мене
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink className="header-list-el" to="/methods">
           Методи
