@@ -15,6 +15,7 @@ export default function AboutMe() {
         <h2 className="flexator home-hi">Мене звуть Тетяна Шестак</h2>
 
         <div className="services-text">
+          <img src="/public/iam.jpg" alt="I am" className="iam" />
           Я – психолог, сексолог і сертифікований психотерапевт в напрямку
           терапії схематів. <br /> Мої пропозиції покращити життя адресовані
           дорослим і підліткам. <br /> З проблемами діточок я працюю через
