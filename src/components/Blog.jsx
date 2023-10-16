@@ -1,7 +1,48 @@
-export default function Blog() {
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const Blog = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        axios.defaults.baseURL = "http://localhost:3000";
+        const response = await axios.get("/posts");
+        setData(response.data);
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
   return (
-    <div className="homestyle ">
-      <h1>Тут будет список постов</h1>
+    <div className="homestyle">
+      <ul>
+        {data.map((post) => {
+          return (
+            <li key={post._id}>
+              <p>{post.text}</p>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
-}
+};
+
+export default Blog;
