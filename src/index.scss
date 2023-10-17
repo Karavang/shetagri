@@ -42,7 +42,7 @@ pre {
   padding: 8px;
   width: 60px;
   height: 80px;
-  background-image: url("/public/logo.png");
+  background-image: url("/src/images/logo.png");
   background-size: contain;
 }
 .header-list {
@@ -67,7 +67,7 @@ pre {
   }
 }
 .hero {
-  background-image: url("/public/hero.jpg");
+  background-image: url("/src/images/hero.jpg");
   background-position: center;
   border-radius: 10px 10px 0 0;
   background-size: cover;
