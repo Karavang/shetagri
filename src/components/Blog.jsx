@@ -31,11 +31,12 @@ const Blog = () => {
   }
 
   return (
-    <div className="homestyle">
-      <ul>
+    <div>
+      <ul className="posts-list">
         {data.map((post) => {
           return (
-            <li key={post._id}>
+            <li key={post._id} className="poststyle">
+              <img src={post.pic} alt="" className="image-post" />
               <p>{post.text}</p>
             </li>
           );

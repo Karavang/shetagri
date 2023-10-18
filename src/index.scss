@@ -135,6 +135,27 @@ pre {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.poststyle {
+  width: 95%;
+  background-color: #ffeed2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.image-post {
+  margin: 8px;
+  border-radius: 10px;
+  max-height: 300px;
+  max-width: 480px;
+}
+.posts-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
 .home-about {
   padding: 8px 24px;
 
