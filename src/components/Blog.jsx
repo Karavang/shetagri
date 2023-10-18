@@ -10,7 +10,7 @@ const Blog = () => {
     const fetchData = async () => {
       try {
         axios.defaults.baseURL = "https://shetagri-back.vercel.app";
-        const response = await axios.get("/");
+        const response = await axios.get("/posts");
         setData(response.data);
         setLoading(false);
       } catch (error) {
