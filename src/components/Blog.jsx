@@ -9,8 +9,8 @@ const Blog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        axios.defaults.baseURL = "http://localhost:3000";
-        const response = await axios.get("/posts");
+        axios.defaults.baseURL = "https://shetagri-back.vercel.app/";
+        const response = await axios.get("/");
         setData(response.data);
         setLoading(false);
       } catch (error) {
