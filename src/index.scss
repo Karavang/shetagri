@@ -20,6 +20,9 @@ pre {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+a {
+  text-decoration: none;
+}
 #root {
   padding: 0;
   margin: 0;
@@ -83,7 +86,16 @@ pre {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
 }
-
+.contacts-pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+}
 .hero-indiv {
   display: flex;
   flex-direction: column;

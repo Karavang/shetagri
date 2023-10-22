@@ -19,7 +19,9 @@ export default function HeaderList() {
         </NavLink>
       </li>
       <li>
-        <NavLink className="header-list-el">Клуб `Шоколад`</NavLink>
+        <NavLink className="header-list-el" to="/contacts">
+          Контакти
+        </NavLink>
       </li>
     </ul>
   );

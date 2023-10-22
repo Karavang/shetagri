@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import "./index.scss";
 import Methods from "./components/Methods";
 import Blog from "./components/Blog";
+import { Contacts } from "./components/Contacts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<Home />} />
         <Route path="/methods" element={<Methods />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </>
   );
