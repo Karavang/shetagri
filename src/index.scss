@@ -138,7 +138,6 @@ a {
 }
 .services-text {
   margin-top: 16px;
-  line-height: 40px;
 }
 .pre-formatted-text {
   white-space: pre-wrap;
@@ -181,6 +180,7 @@ a {
   font-weight: 400;
 }
 .list-methods {
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
@@ -215,7 +215,7 @@ a {
   padding: 0;
 
   display: flex;
-  justify-content: center;
+
   gap: 24px;
   align-items: center;
   text-align: center;
@@ -223,6 +223,7 @@ a {
 
 @media screen and (max-width: 830px) {
   .blog-post {
+    justify-content: center;
     flex-direction: column;
   }
   .header-list {
