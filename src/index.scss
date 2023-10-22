@@ -38,7 +38,7 @@ a {
   transition: position 0.3s ease-in-out;
 }
 .iam {
-  height: 300px;
+  height: 310px;
   float: right;
 }
 .logo {
@@ -157,8 +157,6 @@ a {
   width: 95%;
   background-color: #ffeed2;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
 }
 .image-post {
   margin: 8px;
@@ -212,9 +210,36 @@ a {
     width: 100%;
   }
 }
+
+.blog-post {
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
 @media screen and (max-width: 830px) {
+  .blog-post {
+    flex-direction: column;
+  }
   .header-list {
     flex-direction: column;
+  }
+  .contacts-pos {
+    padding: 0;
+    font-size: 24px;
+  }
+  .home-hi {
+    font-size: 40px;
+  }
+  .image-post {
+    margin: 8px;
+    border-radius: 10px;
+    max-height: 300px;
+    max-width: 96%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -226,6 +251,9 @@ a {
     text-align: center;
     background-color: #fff9ef;
   }
+  // .services-text {
+  //   font-size: ;
+  // }
   #dropdown-basic-button {
     color: black;
     font-size: 18px;

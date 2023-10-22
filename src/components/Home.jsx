@@ -6,7 +6,7 @@ export default function Home() {
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>
           <p className="hero-p">
-            `Дорогу осилити пішки ідучий` <br /> Луций Анней Сенека
+            `Дорогу осилить пішки ідучий` <br /> Луций Анней Сенека
           </p>
         </div>
       </div>

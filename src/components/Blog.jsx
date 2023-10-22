@@ -36,8 +36,14 @@ const Blog = () => {
         {data.map((post) => {
           return (
             <li key={post._id} className="poststyle">
-              <img src={post.pic} alt="" className="image-post" />
-              <p>{post.text}</p>
+              <ul className="blog-post">
+                <li>
+                  <img src={post.pic} alt="" className="image-post" />
+                </li>
+                <li>
+                  <p>{post.text}</p>
+                </li>
+              </ul>
             </li>
           );
         })}
