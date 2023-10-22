@@ -2,7 +2,7 @@ import iam from "../images/iam.jpg";
 export default function AboutMe() {
   return (
     <div className="homestyle">
-      <section className="hero">
+      <section className="hero heroAboutMe">
         <div className="hero-indiv">
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>

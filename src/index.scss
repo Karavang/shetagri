@@ -66,8 +66,13 @@ pre {
     color: #f9b233;
   }
 }
+.heroHome {
+  background-image: url("/src/images/heroHome.jpg");
+}
+.heroAboutMe {
+  background-image: url("/src/images/heroAboutMe.jpeg");
+}
 .hero {
-  background-image: url("/src/images/hero.jpg");
   background-position: center;
   border-radius: 10px 10px 0 0;
   background-size: cover;

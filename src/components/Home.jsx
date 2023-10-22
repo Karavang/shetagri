@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <div className="homestyle">
-      <div className="hero">
+      <div className="hero heroHome">
         <div className="hero-indiv">
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>
           <p className="hero-p">
-            `Хто хоче - шукає спосіб, хто не хоче - виправдання.` <br /> Сократ
+            `Дорогу осилити пішки ідучий` <br /> Луций Анней Сенека
           </p>
         </div>
       </div>
