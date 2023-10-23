@@ -12,11 +12,26 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route index element={<AboutMe />} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/methods" element={<Methods />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route
+          index
+          element={<AboutMe />}
+        />
+        <Route
+          path="/about"
+          element={<Home />}
+        />
+        <Route
+          path="/methods"
+          element={<Methods />}
+        />
+        <Route
+          path="/blog"
+          element={<Blog />}
+        />
+        <Route
+          path="/contacts"
+          element={<Contacts />}
+        />
       </Routes>
     </>
   );
