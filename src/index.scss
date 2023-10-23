@@ -37,10 +37,7 @@ a {
   padding: 0 5%;
   transition: position 0.3s ease-in-out;
 }
-.iam {
-  height: 310px;
-  float: right;
-}
+
 .logo {
   padding: 8px;
   width: 60px;
@@ -220,8 +217,17 @@ a {
   align-items: center;
   text-align: center;
 }
+@media screen and (min-width: 831px) {
+  .iam {
+    height: 310px;
+    float: right;
+  }
+}
 
 @media screen and (max-width: 830px) {
+  .iam {
+    width: 100%;
+  }
   .blog-post {
     justify-content: center;
     flex-direction: column;
