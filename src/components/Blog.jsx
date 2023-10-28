@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        axios.defaults.baseURL = "https://shetagri-back.vercel.app";
+        axios.defaults.baseURL = "https://shetagri-back.onrender.com";
         const response = await axios.get("/");
         setData(response.data);
         setLoading(false);
@@ -35,10 +35,17 @@ const Blog = () => {
       <ul className="posts-list">
         {data.map((post) => {
           return (
-            <li key={post._id} className="poststyle">
+            <li
+              key={post._id}
+              className="poststyle"
+            >
               <ul className="blog-post">
                 <li>
-                  <img src={post.pic} alt="" className="image-post" />
+                  <img
+                    src={post.pic}
+                    alt=""
+                    className="image-post"
+                  />
                 </li>
                 <li>
                   <p>{post.text}</p>
