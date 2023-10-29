@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   margin: 0;
   background-color: #fff9ef;
 }
+
 li {
   list-style-type: disc;
 }
+
 h1,
 h2,
 h3,
@@ -14,6 +17,7 @@ h5 {
   margin: 0;
   padding: 0;
 }
+
 p,
 pre,
 div {
@@ -21,14 +25,17 @@ div {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
 a {
   text-decoration: none;
 }
+
 #root {
   padding: 0;
   margin: 0;
   border: none;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,36 +53,39 @@ a {
   background-image: url("/src/images/logo.png");
   background-size: contain;
 }
+
 .header-list {
   display: flex;
   align-items: center;
   gap: 32px;
   margin: 0;
   margin-right: 140px;
-  li {
-    list-style-type: none;
-  }
 }
+
+.header-list li {
+  list-style-type: none;
+}
+
 .header-list-el {
   font-size: 24px;
   text-decoration: none;
   color: black;
   transition: 0.3s;
   font-family: Georgia, "Times New Roman", Times, serif;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  &:hover {
-    color: #f9b233;
-  }
 }
+
+.header-list-el:hover {
+  color: #f9b233;
+}
+
 .heroHome {
   background-image: url("/src/images/heroHome.jpg");
 }
+
 .heroAboutMe {
   background-image: url("/src/images/heroAboutMe.jpeg");
 }
+
 .hero {
   background-position: center;
   border-radius: 10px 10px 0 0;
@@ -87,6 +97,7 @@ a {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
 }
+
 .contacts-pos {
   padding-top: 1%;
   display: flex;
@@ -98,33 +109,40 @@ a {
   font-weight: 400;
   line-height: 2;
 }
+
 .hero-indiv {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 8% 10%;
 }
+
 .hero-title {
   font-size: 64px;
 }
+
 .hero-pretitle {
   font-size: 32px;
   margin: 8px 16px 16px 16px;
 }
+
 .hero-p {
   display: flex;
   align-content: right;
 }
+
 .flexator {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .home-hi {
   font-size: 36px;
   margin-bottom: 16px;
 }
+
 .services-about {
   font-size: 28px;
   font-family: "Roboto", sans-serif;
@@ -138,12 +156,15 @@ a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 .services-text {
   margin-top: 16px;
 }
+
 .pre-formatted-text {
   white-space: pre-wrap;
 }
+
 .homestyle {
   margin: 16px 5%;
   background-color: #ffeed2;
@@ -154,17 +175,20 @@ a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 .poststyle {
   width: 95%;
   background-color: #ffeed2;
   border-radius: 10px;
 }
+
 .image-post {
   margin: 8px;
   border-radius: 10px;
   max-height: 300px;
   max-width: 480px;
 }
+
 .posts-list {
   margin-top: 16px;
   display: flex;
@@ -172,62 +196,58 @@ a {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 0;
-  li {
-    list-style-type: none;
-  }
 }
+
 .home-about {
   padding: 8px 24px;
-
   font-size: 28px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
 .list-methods {
   padding-top: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
+
 .title-list-methods {
   font-weight: 600;
   margin: 32px 0 8px 0;
 }
+
 .list-methods-mini {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-
-  li {
-    list-style-type: disc;
-  }
 }
+
+.list-methods-mini li {
+  list-style-type: disc;
+}
+
 .fat {
   font-weight: 700;
 }
+
 .dropButton {
   width: 160px;
   color: #ffeed2;
-  display: flex;
-  align-items: center;
-  button {
-    width: 100%;
-  }
+}
+
+.dropButton button {
+  width: 100%;
 }
 
 .blog-post {
   padding: 0;
-
   display: flex;
-
   gap: 24px;
   align-items: center;
   text-align: center;
-  li {
-    list-style-type: none;
-  }
 }
+
 @media screen and (min-width: 831px) {
   .iam {
     height: 310px;
@@ -238,35 +258,42 @@ a {
 @media screen and (max-width: 830px) {
   .home-about {
     padding: 8px 16px;
-
     font-size: 24px;
   }
+
   .list-methods {
     row-gap: 16px;
   }
+
   p,
   pre,
   div {
     font-size: 24px;
   }
+
   .iam {
     width: 100%;
   }
+
   .blog-post {
     justify-content: center;
     flex-direction: column;
   }
+
   .header-list {
     flex-direction: column;
   }
+
   .contacts-pos {
     padding: 0;
     font-size: 24px;
   }
+
   .home-hi {
     font-size: 32px;
     font-weight: 500;
   }
+
   .image-post {
     margin: 8px;
     border-radius: 10px;
@@ -274,18 +301,16 @@ a {
     max-width: 96%;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .header-list {
     margin: 0;
     padding: 0;
-
     justify-content: center;
     text-align: center;
     background-color: #fff9ef;
   }
-  // .services-text {
-  //   font-size: ;
-  // }
+
   #dropdown-basic-button {
     color: black;
     font-size: 18px;
