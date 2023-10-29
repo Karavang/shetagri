@@ -2,7 +2,7 @@
   "name": "shetagri",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://karavang.github.io/shetagri/",
+  "homepage": "https://shetagri.onrender.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
