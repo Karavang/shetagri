@@ -1,0 +1,14 @@
+web:
+  - name: Shetagri
+    env: node
+    routes:
+      - src: "/about"
+        dest: "/index.html"
+      - src: "/methods"
+        dest: "/index.html"
+      - src: "/blog"
+        dest: "/index.html"
+      - src: "/contacts"
+        dest: "/index.html"
+      - src: "/.*"
+        dest: "/index.html"
