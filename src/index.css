@@ -64,6 +64,10 @@ a {
 
 .header-list li {
   list-style-type: none;
+}.posts-list li {
+  list-style-type: none;
+}.blog-post li {
+  list-style-type: none;
 }
 
 .header-list-el {
