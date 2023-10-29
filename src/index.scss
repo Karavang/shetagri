@@ -4,7 +4,7 @@ body {
   background-color: #fff9ef;
 }
 li {
-  list-style-type: none;
+  list-style-type: disc;
 }
 h1,
 h2,
@@ -15,7 +15,8 @@ h5 {
   padding: 0;
 }
 p,
-pre {
+pre,
+div {
   font-size: 28px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -51,6 +52,9 @@ a {
   gap: 32px;
   margin: 0;
   margin-right: 140px;
+  li {
+    list-style-type: none;
+  }
 }
 .header-list-el {
   font-size: 24px;
@@ -119,6 +123,7 @@ a {
 }
 .home-hi {
   font-size: 36px;
+  margin-bottom: 16px;
 }
 .services-about {
   font-size: 28px;
@@ -225,6 +230,19 @@ a {
 }
 
 @media screen and (max-width: 830px) {
+  .home-about {
+    padding: 8px;
+
+    font-size: 24px;
+  }
+  .list-methods {
+    row-gap: 16px;
+  }
+  p,
+  pre,
+  div {
+    font-size: 24px;
+  }
   .iam {
     width: 100%;
   }
@@ -240,7 +258,8 @@ a {
     font-size: 24px;
   }
   .home-hi {
-    font-size: 40px;
+    font-size: 32px;
+    font-weight: 500;
   }
   .image-post {
     margin: 8px;
