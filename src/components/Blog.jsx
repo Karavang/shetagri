@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import scrollToTop from "../../hooks/scrollToTop";
 
 const Blog = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  window.onload = scrollToTop();
   useEffect(() => {
     const fetchData = async () => {
       try {

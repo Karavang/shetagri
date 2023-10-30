@@ -1,5 +1,7 @@
+import scrollToTop from "../../hooks/scrollToTop";
 import iam from "../images/iam.jpg";
 export default function AboutMe() {
+  window.onload = scrollToTop();
   return (
     <div className="homestyle">
       <section className="hero heroAboutMe">

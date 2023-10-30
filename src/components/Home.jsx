@@ -1,6 +1,8 @@
+import scrollToTop from "../../hooks/scrollToTop";
+
 export default function Home() { 
 
-
+  window.onload = scrollToTop();
 
   return (
     <div className="homestyle">

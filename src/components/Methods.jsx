@@ -1,4 +1,7 @@
+import scrollToTop from "../../hooks/scrollToTop";
+
 export default function Methods() {
+  window.onload = scrollToTop();
   return (
     <div className="home-about homestyle ">
       <h2 className="flexator home-hi">Методи і підходи</h2>
