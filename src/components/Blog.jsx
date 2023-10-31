@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import scrollToTop from "../../hooks/scrollToTop";
-
+import loadingGif from "../images/loading.gif";
 const Blog = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,13 @@ const Blog = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <img
+        className="loadingGif"
+        src={loadingGif}
+        alt="Loading"
+      />
+    );
   }
 
   if (error) {
