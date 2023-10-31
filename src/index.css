@@ -39,7 +39,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   position: sticky;
   top: 0;
   background-color: #fff9ef;
@@ -65,9 +65,11 @@ a {
 
 .header-list li {
   list-style-type: none;
-}.posts-list li {
+}
+.posts-list li {
   list-style-type: none;
-}.blog-post li {
+}
+.blog-post li {
   list-style-type: none;
 }
 
@@ -194,7 +196,8 @@ a {
   max-width: 480px;
 }
 
-.posts-list {padding: 0;
+.posts-list {
+  padding: 0;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -253,27 +256,35 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 831px) {
+@media screen and (min-width: 541px) {
   .iam {
     height: 310px;
     float: right;
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 540px) {
+  .hero-indiv {
+    padding: 6%;
+  }
   .home-about {
     padding: 8px 16px;
     font-size: 24px;
   }
 
   .list-methods {
-    row-gap: 16px;
+    row-gap: 8px;
   }
-
+  .hero-title {
+    font-size: 46px;
+  }
+  .hero-pretitle {
+    font-size: 24px;
+  }
   p,
   pre,
   div {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .iam {
