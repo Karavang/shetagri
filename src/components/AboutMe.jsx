@@ -14,9 +14,7 @@ export default function AboutMe() {
         </div>
       </section>
       <section className="home-about ">
-        <h2 className="flexator home-hi">Мене звуть Тетяна Шестак</h2>
-
-        <div className="services-text">
+        <div>
           <img
             src={iam}
             alt="I am"
