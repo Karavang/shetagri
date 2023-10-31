@@ -6,7 +6,7 @@ body {
 }
 
 li {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 h1,
@@ -92,7 +92,7 @@ a {
 .heroAboutMe {
   background-image: url("/src/images/heroAboutMe.jpeg");
 }
-.loadingGif{
+.loadingGif {
   width: 512px;
   height: 512px;
   position: absolute;
@@ -221,12 +221,20 @@ a {
 }
 
 .list-methods {
+  padding-left: 0;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
-
+.list-before li::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  background-image: url("./images/sun.png");
+}
 .title-list-methods {
   font-weight: 600;
   margin: 32px 0 8px 0;
@@ -305,6 +313,7 @@ a {
 
   .header-list {
     flex-direction: column;
+    list-style-image: none;
   }
 
   .contacts-pos {

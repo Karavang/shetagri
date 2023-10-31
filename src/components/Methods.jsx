@@ -15,7 +15,7 @@ export default function Methods() {
         <h3 className="title-list-methods">
           У моїй роботі я використовую різні підходи, такі як:
         </h3>
-        <ul className="list-methods">
+        <ul>
           <li>
             <span className="fat">Схема-терапія</span> – новий напрямок
             психотерапії (оснований на КПТ підході), який дозволяє розв’язати
@@ -72,7 +72,7 @@ export default function Methods() {
             питання
           </h4>
         </ul>
-        <ul className="list-methods-mini">
+        <ul className="list-before">
           <li>усвідомлення і прийняття власної сексуальності</li>
           <li>розладів статтевих стосунків пари (дизгармонії і дисфункції)</li>
           <li>сексуальних дивіацій (збочень в загальному розумінні)</li>
