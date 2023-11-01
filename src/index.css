@@ -92,13 +92,14 @@ a {
 .heroAboutMe {
   background-image: url("/src/images/heroAboutMe.jpeg");
 }
+.gifPos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .loadingGif {
   width: 512px;
   height: 512px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .hero {
   background-position: center;

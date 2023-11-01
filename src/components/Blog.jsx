@@ -25,11 +25,13 @@ const Blog = () => {
 
   if (loading) {
     return (
-      <img
-        className="loadingGif"
-        src={loadingGif}
-        alt="Loading"
-      />
+      <div className="gifPos">
+        <img
+          className="loadingGif"
+          src={loadingGif}
+          alt="Loading"
+        />
+      </div>
     );
   }
 
