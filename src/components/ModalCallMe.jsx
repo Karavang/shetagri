@@ -1,5 +1,5 @@
+import iconClose from "../images/cross.png";
 import CallMeFrom from "./CallMeFrom";
-
 export default function ModalCallMe({ setIsModal }) {
   const closeModal = () => {
     setIsModal(false);
@@ -8,20 +8,17 @@ export default function ModalCallMe({ setIsModal }) {
     e.preventDefault();
     console.log("aboba");
   };
-  const handleClickBackground = (e) => {
-    if (e.currentTarget === e.target) {
-      closeModal();
-    }
-  };
+
   return (
-    <div
-      className="backdrop"
-      onClick={handleClickBackground}
-    >
-      <div className="cardback">
-        <h1>Я вам передзвоню!</h1>
-        <CallMeFrom />
-      </div>
+    <div className="cardback">
+      <h1>Я вам передзвоню!</h1>
+      <CallMeFrom closeModal={closeModal} />{" "}
+      <img
+        onClick={closeModal}
+        src={iconClose}
+        alt=""
+        className="close-icon"
+      />
     </div>
   );
 }

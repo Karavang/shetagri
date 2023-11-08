@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const CallMeFrom = () => {
+const CallMeFrom = ({ closeModal }) => {
   const [contactData, setContactData] = useState({});
   const [errorMsg, setErrorMsg] = useState();
   const [successMsg, setSuccessMsg] = useState(false);
@@ -57,6 +57,7 @@ const CallMeFrom = () => {
     console.log(contactData);
     axios.defaults.baseURL = "https://shetagri-back.onrender.com";
     await axios.post("/modal", contactData);
+    closeModal();
   };
 
   return (

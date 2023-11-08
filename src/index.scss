@@ -62,7 +62,7 @@ a {
     align-items: center;
     gap: 32px;
     margin: 0;
-    margin-right: 140px;
+
     li {
       list-style-type: none;
     }
@@ -262,16 +262,26 @@ a {
 .cardback {
   background-color: #fff9ef;
   padding: 16px;
-  position: fixed;
+  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   gap: 16px;
   width: 700px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 767px) {
+    top: 0;
+
+    right: 0;
+
+    width: 90vw;
+  }
 }
 
 .list-before li::before {
@@ -322,15 +332,28 @@ a {
   align-items: center;
   text-align: center;
 }
+.close-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+}
 
 @media screen and (min-width: 541px) {
   .iam {
     height: 310px;
     float: right;
   }
+  .form-control {
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 540px) {
+  .form-control {
+    width: 80vw;
+  }
   .hero-indiv {
     padding: 6%;
   }
@@ -449,8 +472,4 @@ a {
 .form form #sendmessage.show,
 .form form #errormessage.show {
   display: block;
-}
-
-.form-control {
-  width: 600px;
 }

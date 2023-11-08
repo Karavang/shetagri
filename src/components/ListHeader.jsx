@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 import ModalCallMe from "./ModalCallMe";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function HeaderList() {
   const [isModal, setIsModal] = useState(false);
-
+  useEffect(() => {
+    isModal;
+    document.body.style.overflow = isModal ? "hidden" : "scroll";
+  }, [isModal]);
   return (
     <>
-      {" "}
       <ul className="header-list">
         <li>
           <NavLink
