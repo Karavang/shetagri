@@ -55,8 +55,13 @@ const CallMeFrom = ({ closeModal }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(contactData);
+    const contactDataTo = {
+      ...contactData,
+      message: contactData.message.replace('"', "'"),
+    };
+    console.log(contactDataTo);
     axios.defaults.baseURL = "https://shetagri-back.onrender.com";
-    await axios.post("/modal", contactData);
+    await axios.post("/modal", contactDataTo);
     closeModal();
   };
 

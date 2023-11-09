@@ -6,11 +6,20 @@ import Home from "./components/Home";
 import Methods from "./components/Methods";
 import Blog from "./components/Blog";
 import { Contacts } from "./components/Contacts";
+import { useEffect, useState } from "react";
+import ModalCallMe from "./components/ModalCallMe";
 
 function App() {
+  const [isModal, setIsModal] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = isModal ? "hidden" : "scroll";
+  }, [isModal]);
   return (
     <>
-      <Header />
+      <Header
+        isModal={isModal}
+        setIsModal={setIsModal}
+      />
       <Routes>
         <Route
           index
@@ -33,6 +42,7 @@ function App() {
           element={<Contacts />}
         />
       </Routes>
+      {isModal ? <ModalCallMe setIsModal={setIsModal} /> : null}
     </>
   );
 }
