@@ -261,7 +261,7 @@ a {
   letter-spacing: 0em;
 
   @media screen and (max-width: 767px) {
-    width: 100px;
+    width: 120px !important;
 
     font-size: 16px;
   }
@@ -288,7 +288,7 @@ a {
   }
 
   @media screen and (max-width: 767px) {
-    width: 100px;
+    width: 120px;
 
     font-size: 16px;
   }
@@ -350,15 +350,6 @@ a {
 
 .fat {
   font-weight: 700;
-}
-
-.dropButton {
-  width: 160px;
-  color: #ffeed2;
-
-  button {
-    width: 100%;
-  }
 }
 
 .form-editing {
