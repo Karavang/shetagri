@@ -12,6 +12,7 @@ const Blog = () => {
       try {
         axios.defaults.baseURL = "https://shetagri-back.onrender.com";
         const response = await axios.get("/");
+        console.log(response);
         setData(response.data);
         setLoading(false);
       } catch (error) {
@@ -43,6 +44,12 @@ const Blog = () => {
     <div>
       <ul className="posts-list">
         {data.map((post) => {
+          const uint8Array = new Uint8Array(post.data?.data);
+          const binaryString = uint8Array.reduce(
+            (data, byte) => data + String.fromCharCode(byte),
+            "",
+          );
+          const base64String = btoa(binaryString);
           return (
             <li
               key={post._id}
@@ -51,7 +58,7 @@ const Blog = () => {
               <ul className="blog-post">
                 <li>
                   <img
-                    src={post.pic}
+                    src={`data:image/jpeg;base64,${base64String}`}
                     alt=""
                     className="image-post"
                   />
