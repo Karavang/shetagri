@@ -46,7 +46,7 @@ export default function AboutMe() {
         <br />
         <br />
         Основним методом своєї роботи я вважаю{" "}
-        <span className="fat">Транзакційний аналіз</span>, додаючи різні
+        <span className="fat">транзакційний аналіз</span>, додаючи різні
         терапевтичні інструменти й техніки
         <ul className="list-before">
           <li>схема-терапії</li>
