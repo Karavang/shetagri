@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, unstable_HistoryRouter } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -10,6 +10,16 @@ import { useEffect, useState } from "react";
 import ModalCallMe from "./components/ModalCallMe";
 
 function App() {
+  const history = unstable_HistoryRouter();
+
+  useEffect(() => {
+    const unlisten = history.listen(() => {
+      window.location.reload();
+    });
+    return () => {
+      unlisten();
+    };
+  }, [history]);
   const [isModal, setIsModal] = useState(false);
   useEffect(() => {
     document.body.style.overflow = isModal ? "hidden" : "scroll";
