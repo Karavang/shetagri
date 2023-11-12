@@ -23,11 +23,11 @@ function App() {
       <Routes>
         <Route
           index
-          element={<AboutMe />}
+          element={<Home />}
         />
         <Route
           path="/about"
-          element={<Home />}
+          element={<AboutMe />}
         />
         <Route
           path="/methods"
