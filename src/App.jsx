@@ -12,8 +12,9 @@ import ModalCallMe from "./components/ModalCallMe";
 function App() {
   const [isModal, setIsModal] = useState(false);
   useEffect(() => {
-    document.body.style.overflow = isModal ? "hidden" : "scroll";
+    document.body.style.overflowY = isModal ? "hidden" : "scroll";
   }, [isModal]);
+
   return (
     <>
       <Header
