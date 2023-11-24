@@ -378,7 +378,7 @@ a {
     width: 600px;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 767px) {
   .form-control {
     width: 80vw;
   }
