@@ -55,18 +55,15 @@ const Blog = () => {
               key={post._id}
               className="poststyle"
             >
-              <ul className="blog-post">
-                <li>
-                  <img
-                    src={`data:image/jpeg;base64,${base64String}`}
-                    alt=""
-                    className="image-post"
-                  />
-                </li>
-                <li>
-                  <p>{post.text}</p>
-                </li>
-              </ul>
+              <pre className="text-in-blog">
+                {" "}
+                <img
+                  src={`data:image/jpeg;base64,${base64String}`}
+                  alt=""
+                  className="image-post"
+                />
+                {post.text}
+              </pre>
             </li>
           );
         })}
