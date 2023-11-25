@@ -12,7 +12,7 @@ export default function ModalCallMe({ setIsModal }) {
   return (
     <div className="backdrop">
       <div className="cardback">
-        <h1>Я вам передзвоню!</h1>
+        <h1>Я вам зв`яжусь!</h1>
         <CallMeFrom closeModal={closeModal} />{" "}
         <img
           onClick={closeModal}

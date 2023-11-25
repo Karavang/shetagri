@@ -95,6 +95,10 @@ a {
   height: 512px;
 }
 
+.paragraph {
+  text-indent: 16px;
+}
+
 .hero {
   background-position: center;
   border-radius: 10px 10px 0 0;
@@ -113,7 +117,6 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 2;
@@ -405,6 +408,9 @@ a {
   }
   .iam {
     width: 100%;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .blog-post {
     justify-content: center;
@@ -416,7 +422,7 @@ a {
   }
   .contacts-pos {
     padding: 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .home-hi {
     font-size: 32px;
@@ -501,4 +507,5 @@ a {
 
 .text-in-blog {
   text-wrap: wrap;
+  overflow-x: hidden;
 }/*# sourceMappingURL=index.css.map */

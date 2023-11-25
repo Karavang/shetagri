@@ -103,6 +103,9 @@ a {
     height: 512px;
   }
 }
+.paragraph {
+  text-indent: 16px;
+}
 
 .hero {
   background-position: center;
@@ -122,7 +125,6 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 2;
@@ -427,6 +429,8 @@ a {
 
   .iam {
     width: 100%;
+    height: 450px;
+    object-fit: cover;
   }
 
   .blog-post {
@@ -441,7 +445,7 @@ a {
 
   .contacts-pos {
     padding: 0;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .home-hi {
@@ -530,4 +534,5 @@ a {
 }
 .text-in-blog {
   text-wrap: wrap;
+  overflow-x: hidden;
 }

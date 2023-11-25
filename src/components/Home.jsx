@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </section>
       <section className="home-about ">
-        <div>
+        <div className="abzac">
           <img
             src={iam}
             alt="I am"
