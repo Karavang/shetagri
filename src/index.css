@@ -63,6 +63,16 @@ a {
   gap: 32px;
   margin: 0;
 }
+@media screen and (max-width: 767px) {
+  .header .header-list {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    right: 32px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #fff9ef;
+  }
+}
 .header .header-list li {
   list-style-type: none;
 }
@@ -112,14 +122,14 @@ a {
 }
 
 .contacts-pos {
-  padding-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  padding: 1%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 2;
+}
+.contacts-pos span {
+  color: #007bff;
+  cursor: pointer;
 }
 
 .hero-indiv {
@@ -129,7 +139,7 @@ a {
   padding: 8% 10%;
 }
 .hero-indiv .hero-title {
-  font-size: 64px;
+  font-size: 48px;
 }
 .hero-indiv .hero-pretitle {
   font-size: 32px;
@@ -313,10 +323,18 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.cardback h1 {
+  text-align: center;
+  font-size: 32px;
+}
 @media screen and (max-width: 767px) {
   .cardback {
     right: 0;
     width: 90vw;
+  }
+  .cardback h1 {
+    text-align: center;
+    font-size: 28px;
   }
 }
 
@@ -508,4 +526,38 @@ a {
 .text-in-blog {
   text-wrap: wrap;
   overflow-x: hidden;
+}
+
+.karavang {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.karavang h3 {
+  color: purple;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.karavang p {
+  padding: 0;
+  margin-bottom: 8px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .karavang h3 {
+    font-size: 28px;
+  }
+  .karavang p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=index.css.map */

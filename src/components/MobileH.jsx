@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import HeaderList from "./ListHeader";
-export function MobileHeader({ setIsModal }) {
+export function MobileHeader({ setIsModal, setIsNav, isNav }) {
+  const changerNav = () => {
+    setIsNav(!isNav);
+  };
   return (
     <>
       <ul className="flexator">
@@ -16,14 +18,17 @@ export function MobileHeader({ setIsModal }) {
           </button>
         </li>
         <li className="ml-8">
-          <DropdownButton
-            id="dropdown-basic-button"
-            title="Navigation"
-            className="dropButton"
-            variant="warning"
+          <button
+            onClick={changerNav}
+            className="openModal"
           >
-            <HeaderList setIsModal={setIsModal} />
-          </DropdownButton>
+            Навігація
+          </button>
+          <HeaderList
+            setIsNav={setIsNav}
+            isNav={isNav}
+            setIsModal={setIsModal}
+          />
         </li>
       </ul>
     </>

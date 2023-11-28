@@ -64,9 +64,17 @@ a {
   .header-list {
     display: flex;
     align-items: center;
+
     gap: 32px;
     margin: 0;
-
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      right: 32px;
+      padding: 16px;
+      border-radius: 10px;
+      background-color: #fff9ef;
+    }
     li {
       list-style-type: none;
     }
@@ -120,14 +128,14 @@ a {
 }
 
 .contacts-pos {
-  padding-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  padding: 1%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 2;
+  span {
+    color: #007bff;
+    cursor: pointer;
+  }
 }
 
 .hero-indiv {
@@ -137,7 +145,7 @@ a {
   padding: 8% 10%;
 
   .hero-title {
-    font-size: 64px;
+    font-size: 48px;
   }
 
   .hero-pretitle {
@@ -323,10 +331,16 @@ a {
   flex-direction: column;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  h1 {
+    text-align: center;
+    font-size: 32px;
+  }
   @media screen and (max-width: 767px) {
     right: 0;
-
+    h1 {
+      text-align: center;
+      font-size: 28px;
+    }
     width: 90vw;
   }
 }
@@ -535,4 +549,37 @@ a {
 .text-in-blog {
   text-wrap: wrap;
   overflow-x: hidden;
+}
+.karavang {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    color: purple;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  p {
+    padding: 0;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 768px) {
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
 }

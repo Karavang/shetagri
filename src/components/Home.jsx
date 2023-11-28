@@ -9,7 +9,7 @@ export default function Home() {
           <h1 className="hero-title">Тетяна Шестак</h1>
           <h3 className="hero-pretitle">ВАШ Психолог</h3>
           <p className="hero-p">
-            `Хто хоче - шукає спосіб, хто не хоче - виправдання.` <br /> Сократ
+            `Хто хоче, шукає можливості, хто не хоче - виправдання` <br /> Сократ
           </p>
         </div>
       </section>
