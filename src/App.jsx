@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route
           index
-          element={<Home />}
+          element={<Home setIsModal={setIsModal} />}
         />
         <Route
           path="/about"

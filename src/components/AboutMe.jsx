@@ -135,9 +135,9 @@ export default function AboutMe() {
             ви тут, як раз час ! 😊
           </span>
           <br />
-          <span className="fat">Рада бути вам корисною.</span>
           <br />
-          <i className="fat">Ваша Тетяна.</i>
+          <span className="fat">Рада бути вам корисною.</span>{" "}
+          <i className="fat"> Ваш психолог - Тетяна.</i>
         </div>
       </section>
     </div>
