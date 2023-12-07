@@ -15,15 +15,15 @@ export default function Home({setIsModal}) {
           <p className="hero-p">
             `Хто хоче - шукає можливості, <br/>Хто не хоче - виправдання` <br /> Сократ
           </p>
-        </div>
-      </section>
-      <section className="home-about ">
-        <div className="abzac">
-          <img
+        </div><img
             src={iam}
             alt="I am"
             className="iam"
           />
+      </section>
+      <section className="home-about ">
+        <div className="abzac">
+          
         
           <span className="fat">
           Я – психолог, сексолог, психотерапевт, супервізор, член Української спілки психотерапевтів.
