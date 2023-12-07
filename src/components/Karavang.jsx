@@ -5,6 +5,7 @@ export const Karavang = () => {
   return (
     <>
       <div className="karavang">
+        <a>Розробник сайту</a>{" "}
         <h3 onClick={() => handleLinkClick("https://github.com/Karavang")}>
           Karavang
         </h3>

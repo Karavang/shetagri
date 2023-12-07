@@ -403,6 +403,7 @@ a {
 @media screen and (min-width: 541px) {
   .iam {
     height: 310px;
+
     float: right;
   }
 
@@ -417,7 +418,7 @@ a {
   }
 
   .hero-indiv {
-    padding: 6%;
+    padding: 3% 6%;
   }
 
   .home-about {
@@ -445,7 +446,7 @@ a {
 
   .iam {
     width: 100%;
-    height: 450px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -569,6 +570,9 @@ a {
     margin: 0;
     cursor: pointer;
   }
+  a {
+    font-size: 20px;
+  }
   p {
     padding: 0;
     margin-bottom: 8px;
@@ -577,6 +581,7 @@ a {
     font-weight: 400;
   }
   @media screen and (min-width: 768px) {
+    a,
     h3 {
       font-size: 28px;
     }
