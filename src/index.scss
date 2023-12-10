@@ -9,6 +9,9 @@ body {
     min-height: 250px;
     max-height: 400px;
     overflow: auto;
+    @media screen and (max-width: 767px) {
+      height: 35svh;
+    }
   }
 
   li {
@@ -341,7 +344,7 @@ a {
     right: 0;
     h1 {
       text-align: center;
-      font-size: 28px;
+      font-size: 22px;
     }
     width: 90svw;
   }

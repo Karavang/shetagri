@@ -79,7 +79,7 @@ export default function AboutMe() {
           <ul className="list-before">
             <li>
               <span className="fat">
-                Schema Therapy,в INTERNATIONAL SOCIETY SCHEMA THERAPY,
+                Scheme Therapy,в INTERNATIONAL SOCIETY SCHEME THERAPY,
               </span>{" "}
               Warsaw, Poland, 2023. Курс читали Magdalena Kitlowska, Marta
               Zurowska.
