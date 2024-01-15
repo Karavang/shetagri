@@ -593,3 +593,23 @@ a {
     }
   }
 }
+.soc-list {
+  position: sticky;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    li {
+      padding: 4px;
+      background-color: #007bff;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

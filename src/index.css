@@ -573,4 +573,25 @@ a {
   .karavang p {
     font-size: 24px;
   }
+}
+
+.soc-list {
+  position: sticky;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.soc-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.soc-list ul li {
+  padding: 4px;
+  background-color: #007bff;
+}
+.soc-list ul li svg {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=index.css.map */

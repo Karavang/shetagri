@@ -3,10 +3,10 @@ import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Home from "./components/Home";
 
-import Methods from "./components/Methods";
+import { useEffect, useState } from "react";
 import Blog from "./components/Blog";
 import { Contacts } from "./components/Contacts";
-import { useEffect, useState } from "react";
+import Methods from "./components/Methods";
 import ModalCallMe from "./components/ModalCallMe";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         isModal={isModal}
         setIsModal={setIsModal}
       />
+
       <Routes>
         <Route
           index

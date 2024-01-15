@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import scrollToTop from "../../hooks/scrollToTop";
 import iam from "../images/iam.jpg";
+
 export default function Home({setIsModal}) { 
   window.onload = scrollToTop();
   const openModal = ()=>{
