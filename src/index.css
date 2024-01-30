@@ -594,4 +594,24 @@ a {
 .soc-list ul li svg {
   width: 24px;
   height: 24px;
+}
+
+.feeds {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+}
+.feeds ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feeds ul li {
+  width: 25%;
+}
+.feeds ul li img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import scrollToTop from "../../hooks/scrollToTop";
 import iam from "../images/iam.jpg";
+import { Feedback } from "./Feedback";
 
 export default function Home({setIsModal}) { 
   window.onload = scrollToTop();
@@ -58,6 +59,7 @@ export default function Home({setIsModal}) {
           </span>
         </div>
       </section>
+      <Feedback/>
     </div>
   );
 }

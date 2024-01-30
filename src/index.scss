@@ -613,3 +613,24 @@ a {
     }
   }
 }
+.feeds {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+      width: 25%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
