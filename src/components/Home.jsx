@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import  { scrollToFeed, scrollToTop } from "../../hooks/scrollToTop";
+import  scrollToTop,{ scrollToFeed  } from "../../hooks/scrollToTop";
 import iam from "../images/iam.jpg";
 import { Feedback } from "./Feedback";
 

@@ -1,4 +1,4 @@
-export const scrollToTop = () => {
+const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "instant" });
 };
 export const scrollToFeed = () => {
@@ -10,3 +10,4 @@ export const scrollToFeed = () => {
     });
   }
 };
+export default scrollToTop;
