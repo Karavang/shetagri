@@ -619,7 +619,20 @@ a {
   justify-content: space-around;
   flex-direction: column;
   gap: 16px;
-
+  .icon-arrows-feed {
+    width: 64px;
+    height: 64px;
+    fill: black;
+    transition: 0.1s;
+    &:hover {
+      fill: rgb(46, 46, 46);
+    }
+  }
+  button {
+    border: none;
+    color: none;
+    background: none;
+  }
   ul {
     display: flex;
     align-items: center;

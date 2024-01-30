@@ -603,6 +603,20 @@ a {
   flex-direction: column;
   gap: 16px;
 }
+.feeds .icon-arrows-feed {
+  width: 64px;
+  height: 64px;
+  fill: black;
+  transition: 0.1s;
+}
+.feeds .icon-arrows-feed:hover {
+  fill: rgb(46, 46, 46);
+}
+.feeds button {
+  border: none;
+  color: none;
+  background: none;
+}
 .feeds ul {
   display: flex;
   align-items: center;

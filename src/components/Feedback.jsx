@@ -28,7 +28,16 @@ export const Feedback = () => {
       <h2>Відгуки</h2>
       <div className="carousel">
         <ul>
-          <button onClick={prevSlide}>9</button>
+          <button onClick={prevSlide}>
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="icon-arrows-feed"
+            >
+              <path d="M15.422 16.594l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z"></path>
+            </svg>
+          </button>
           <li>
             <img
               src={feedsImages[currentIndex1]}
@@ -47,7 +56,16 @@ export const Feedback = () => {
               alt={`Slide ${currentIndex3}`}
             />
           </li>
-          <button onClick={nextSlide}>9</button>
+          <button onClick={nextSlide}>
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="icon-arrows-feed"
+            >
+              <path d="M8.578 16.594l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z"></path>
+            </svg>
+          </button>
         </ul>
       </div>
     </section>
