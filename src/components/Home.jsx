@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import scrollToTop from "../../hooks/scrollToTop";
+import  { scrollToFeed, scrollToTop } from "../../hooks/scrollToTop";
 import iam from "../images/iam.jpg";
 import { Feedback } from "./Feedback";
 
@@ -32,7 +32,7 @@ export default function Home({setIsModal}) {
           </span>
          
          <div className="paragraph">Основний метод моєї роботи - <span className="fat">Транзакційний аналіз</span>. За необхідності  додаю методи схема-терапії, травма-фокусу, психосоматичної релаксації, арт-терапії. Детальніше тут. <NavLink to="/methods">❇️</NavLink></div>
-         <div className="paragraph">Маю десятирічний досвід роботи і багато позитивних відгуків моїх клієнтів. Про це можна почитати тут ❇️</div>
+         <div className="paragraph">Маю десятирічний досвід роботи і багато позитивних відгуків моїх клієнтів. Про це можна почитати тут <button onClick={scrollToFeed}>❇️</button></div>
          <div className="paragraph"> Я надаю індивідуальні консультації, а також працюю з парами та сім’ями.  Мої пропозиції покращити життя адресовані дорослим і підліткам.</div>
         
 <div className="paragraph">          <span className="fat">Кожна людина</span> - має свою{" "}

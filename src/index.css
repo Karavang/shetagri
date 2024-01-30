@@ -27,6 +27,12 @@ h5 {
   padding: 0;
 }
 
+button {
+  border: none;
+  color: none;
+  background: none;
+}
+
 p,
 pre,
 div {
@@ -597,6 +603,7 @@ a {
 }
 
 .feeds {
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -24,7 +24,10 @@ export const Feedback = () => {
     );
   };
   return (
-    <section className="feeds">
+    <section
+      className="feeds"
+      id="feed"
+    >
       <h2>Відгуки</h2>
       <div className="carousel">
         <ul>

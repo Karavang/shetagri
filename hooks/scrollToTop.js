@@ -1,4 +1,12 @@
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+export const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "instant" });
 };
-export default scrollToTop;
+export const scrollToFeed = () => {
+  const targetElement = document.getElementById("feed");
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
