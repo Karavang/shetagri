@@ -635,4 +635,12 @@ a {
 }
 .feeds ul li img {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .feeds ul {
+    touch-action: pan-x;
+  }
+  .feeds ul li {
+    width: 80%;
+  }
 }/*# sourceMappingURL=index.css.map */

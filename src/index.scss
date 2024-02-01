@@ -646,8 +646,15 @@ a {
 
     li {
       width: 25%;
+
       img {
         width: 100%;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      touch-action: pan-x;
+      li {
+        width: 80%;
       }
     }
   }
