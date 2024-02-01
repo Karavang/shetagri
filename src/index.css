@@ -629,6 +629,7 @@ a {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0;
 }
 .feeds ul li {
   width: 25%;
