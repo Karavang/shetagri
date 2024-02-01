@@ -104,6 +104,11 @@ export const Feedback = () => {
             </button>
           )}
         </ul>
+        {window.innerWidth < 768 && (
+          <h4>
+            {currentIndex1 + 1}/{feedsImages.length}
+          </h4>
+        )}
       </div>
     </section>
   );

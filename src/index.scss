@@ -651,11 +651,17 @@ a {
         width: 100%;
       }
     }
-    @media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 767px) {
+    ul {
       touch-action: pan-x;
       li {
         width: 80%;
       }
+    }
+    h4 {
+      text-align: center;
+      font-weight: 600;
     }
   }
 }
