@@ -44,6 +44,7 @@ const Blog = () => {
     <div>
       <ul className="posts-list">
         {data.map((post) => {
+          console.log(post);
           const uint8Array = new Uint8Array(post.data?.data);
           const binaryString = uint8Array.reduce(
             (data, byte) => data + String.fromCharCode(byte),

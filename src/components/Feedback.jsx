@@ -8,6 +8,7 @@ export const Feedback = () => {
   const [currentIndex3, setCurrentIndex3] = useState(2);
 
   const nextSlide = () => {
+    console.log(feedsImages);
     setCurrentIndex1((prevIndex) => (prevIndex + 1) % feedsImages.length);
     setCurrentIndex2((prevIndex) => (prevIndex + 1) % feedsImages.length);
     setCurrentIndex3((prevIndex) => (prevIndex + 1) % feedsImages.length);
@@ -71,7 +72,7 @@ export const Feedback = () => {
 
           <li>
             <img
-              src={feedsImages[currentIndex1]}
+              src={`data:image/jpeg;base64,${feedsImages[currentIndex1]}`}
               alt={`Slide ${currentIndex1}`}
             />
           </li>
@@ -79,13 +80,13 @@ export const Feedback = () => {
             <>
               <li>
                 <img
-                  src={feedsImages[currentIndex2]}
+                  src={`data:image/jpeg;base64,${feedsImages[currentIndex2]}`}
                   alt={`Slide ${currentIndex2}`}
                 />
               </li>
               <li>
                 <img
-                  src={feedsImages[currentIndex3]}
+                  src={`data:image/jpeg;base64,${feedsImages[currentIndex3]}`}
                   alt={`Slide ${currentIndex3}`}
                 />
               </li>
