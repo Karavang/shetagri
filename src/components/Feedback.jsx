@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { feedsImages } from "../../hooks/feeds";
 import { useSwipeable } from "react-swipeable";
 
@@ -6,23 +6,30 @@ export const Feedback = () => {
   const [currentIndex1, setCurrentIndex1] = useState(0);
   const [currentIndex2, setCurrentIndex2] = useState(1);
   const [currentIndex3, setCurrentIndex3] = useState(2);
-
+  const [feeds, setFeeds] = useState([]);
   const nextSlide = () => {
-    console.log(feedsImages);
-    setCurrentIndex1((prevIndex) => (prevIndex + 1) % feedsImages.length);
-    setCurrentIndex2((prevIndex) => (prevIndex + 1) % feedsImages.length);
-    setCurrentIndex3((prevIndex) => (prevIndex + 1) % feedsImages.length);
+    setCurrentIndex1((prevIndex) => (prevIndex + 1) % feeds.length);
+    setCurrentIndex2((prevIndex) => (prevIndex + 1) % feeds.length);
+    setCurrentIndex3((prevIndex) => (prevIndex + 1) % feeds.length);
   };
-
+  useEffect(() => {
+    feedsImages
+      .then((images) => {
+        setFeeds(images);
+      })
+      .catch((error) => {
+        console.error("Error handling images:", error);
+      });
+  }, []);
   const prevSlide = () => {
     setCurrentIndex1(
-      (prevIndex) => (prevIndex - 1 + feedsImages.length) % feedsImages.length,
+      (prevIndex) => (prevIndex - 1 + feeds.length) % feeds.length,
     );
     setCurrentIndex2(
-      (prevIndex) => (prevIndex - 1 + feedsImages.length) % feedsImages.length,
+      (prevIndex) => (prevIndex - 1 + feeds.length) % feeds.length,
     );
     setCurrentIndex3(
-      (prevIndex) => (prevIndex - 1 + feedsImages.length) % feedsImages.length,
+      (prevIndex) => (prevIndex - 1 + feeds.length) % feeds.length,
     );
   };
   const config = {
@@ -72,7 +79,7 @@ export const Feedback = () => {
 
           <li>
             <img
-              src={`data:image/jpeg;base64,${feedsImages[currentIndex1]}`}
+              src={`data:image/jpeg;base64,${feeds[currentIndex1]}`}
               alt={`Slide ${currentIndex1}`}
             />
           </li>
@@ -80,13 +87,13 @@ export const Feedback = () => {
             <>
               <li>
                 <img
-                  src={`data:image/jpeg;base64,${feedsImages[currentIndex2]}`}
+                  src={`data:image/jpeg;base64,${feeds[currentIndex2]}`}
                   alt={`Slide ${currentIndex2}`}
                 />
               </li>
               <li>
                 <img
-                  src={`data:image/jpeg;base64,${feedsImages[currentIndex3]}`}
+                  src={`data:image/jpeg;base64,${feeds[currentIndex3]}`}
                   alt={`Slide ${currentIndex3}`}
                 />
               </li>
@@ -107,7 +114,7 @@ export const Feedback = () => {
         </ul>
         {window.innerWidth < 768 && (
           <h4>
-            {currentIndex1 + 1}/{feedsImages.length}
+            {currentIndex1 + 1}/{feeds.length}
           </h4>
         )}
       </div>
