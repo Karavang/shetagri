@@ -1,11 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import scrollToTop from "../../hooks/scrollToTop";
 import loadingGif from "../images/loading.gif";
-const Blog = () => {
+
+const Blog = ({ setPostText }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const dataFunc = (e) => {
+    setPostText(e);
+  };
   window.onload = scrollToTop();
   useEffect(() => {
     const fetchData = async () => {
@@ -14,6 +19,7 @@ const Blog = () => {
         const response = await axios.get("/");
         console.log(response);
         setData(response.data);
+        dataFunc(response);
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -56,15 +62,14 @@ const Blog = () => {
               key={post._id}
               className="poststyle"
             >
-              <pre className="text-in-blog">
-                {" "}
+              <Link to={`${post._id}`}>
                 <img
                   src={`data:image/jpeg;base64,${base64String}`}
                   alt=""
                   className="image-post"
                 />
-                {post.text}
-              </pre>
+                <h2>{post.title}</h2>
+              </Link>
             </li>
           );
         })}
