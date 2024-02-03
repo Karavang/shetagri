@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -20,7 +20,7 @@ export const BlogElem = () => {
     }
 
     getText();
-  }, [id]); // Ensure that useEffect runs only when 'id' changes
+  }, [id]);
 
   return <pre className="text-in-blog posttextstyle">{text}</pre>;
 };

@@ -43,6 +43,7 @@ div {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #root {
@@ -218,9 +219,25 @@ a {
   border-radius: 10px;
   padding: 0 16px;
 }
+.poststyle a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.poststyle a h2 {
+  text-align: center;
+  width: 100%;
+}
+.poststyle a img {
+  max-height: 400px;
+}
 @media screen and (max-width: 767px) {
   .poststyle {
     padding: 0 8px;
+  }
+  .poststyle a {
+    flex-direction: column;
   }
 }
 
