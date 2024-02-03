@@ -1,18 +1,17 @@
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
+import Blog from "./components/Blog";
+import { BlogElem } from "./components/BlogElem";
+import { Contacts } from "./components/Contacts";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import { BlogContext } from "./components/BlogContext";
-import { useEffect, useState } from "react";
-import Blog from "./components/Blog";
-import { Contacts } from "./components/Contacts";
 import Methods from "./components/Methods";
 import ModalCallMe from "./components/ModalCallMe";
-import { BlogElem } from "./components/BlogElem";
 
 function App() {
   const [isModal, setIsModal] = useState(false);
-  const [postText, setPostText] = useState([]);
+
   useEffect(() => {
     document.body.style.overflowY = isModal ? "hidden" : "scroll";
   }, [isModal]);
@@ -43,11 +42,11 @@ function App() {
         />
         <Route
           path="/blog"
-          element={<Blog setPostText={setPostText} />}
+          element={<Blog />}
         />
         <Route
           path="/blog/:id"
-          element={<BlogElem postText={postText} />}
+          element={<BlogElem />}
         />
       </Routes>
       {isModal ? <ModalCallMe setIsModal={setIsModal} /> : null}

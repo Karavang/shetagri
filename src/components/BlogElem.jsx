@@ -1,15 +1,26 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
-export const BlogElem = ({ postText }) => {
+export const BlogElem = () => {
   const { id } = useParams();
-  let text;
-  const matchingItem = postText.data.filter((e) => e._id === id);
-  console.log(matchingItem);
-  if (matchingItem) {
-    text = matchingItem[0].text;
-    console.log(text);
-  }
+  const [text, setText] = useState("");
 
-  return <pre className="text-in-blog">{text}</pre>;
+  useEffect(() => {
+    async function getText() {
+      try {
+        const response = await axios.get(
+          `https://shetagri-back.onrender.com/${id}`,
+        );
+        console.log(response.data);
+        setText(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    getText();
+  }, [id]); // Ensure that useEffect runs only when 'id' changes
+
+  return <pre className="text-in-blog posttextstyle">{text}</pre>;
 };

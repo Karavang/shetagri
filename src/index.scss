@@ -665,3 +665,13 @@ a {
     }
   }
 }
+.posttextstyle {
+  margin: 0 auto;
+  width: 95%;
+  background-color: #ffeed2;
+  border-radius: 10px;
+  padding: 16px;
+  @media screen and (max-width: 767px) {
+    padding: 8px;
+  }
+}

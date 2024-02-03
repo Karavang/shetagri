@@ -648,4 +648,17 @@ a {
     text-align: center;
     font-weight: 600;
   }
+}
+
+.posttextstyle {
+  margin: 0 auto;
+  width: 95%;
+  background-color: #ffeed2;
+  border-radius: 10px;
+  padding: 16px;
+}
+@media screen and (max-width: 767px) {
+  .posttextstyle {
+    padding: 8px;
+  }
 }/*# sourceMappingURL=index.css.map */

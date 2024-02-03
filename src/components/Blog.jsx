@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 import scrollToTop from "../../hooks/scrollToTop";
 import loadingGif from "../images/loading.gif";
 
-const Blog = ({ setPostText }) => {
+const Blog = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const dataFunc = (e) => {
-    setPostText(e);
-  };
+
   window.onload = scrollToTop();
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +17,7 @@ const Blog = ({ setPostText }) => {
         const response = await axios.get("/");
         console.log(response);
         setData(response.data);
-        dataFunc(response);
+
         setLoading(false);
       } catch (error) {
         setError(error);
