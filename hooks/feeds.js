@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const feedsImages = axios
-  .get("https://shetagri-back.onrender.com/feed")
+  .get("https://shetagri-back.onrender.com/shetagri/feed")
   .then((response) =>
     response.data.map((item) => {
       const uint8Array = new Uint8Array(item.data.data);

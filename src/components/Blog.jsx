@@ -13,7 +13,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        axios.defaults.baseURL = "https://shetagri-back.onrender.com";
+        axios.defaults.baseURL = "https://shetagri-back.onrender.com/shetagri";
         const response = await axios.get("/");
         console.log(response);
         setData(response.data);

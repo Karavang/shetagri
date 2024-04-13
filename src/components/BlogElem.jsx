@@ -10,7 +10,7 @@ export const BlogElem = () => {
     async function getText() {
       try {
         const response = await axios.get(
-          `https://shetagri-back.onrender.com/${id}`,
+          `https://shetagri-back.onrender.com/shetagri/${id}`,
         );
         console.log(response.data);
         setText(response.data);

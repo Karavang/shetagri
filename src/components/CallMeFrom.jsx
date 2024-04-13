@@ -60,7 +60,7 @@ const CallMeFrom = ({ closeModal }) => {
       message: contactData.message.replace('"', "'"),
     };
     console.log(contactDataTo);
-    axios.defaults.baseURL = "https://shetagri-back.onrender.com";
+    axios.defaults.baseURL = "https://shetagri-back.onrender.com/shetagri";
     await axios.post("/modal", contactDataTo);
     closeModal();
   };
