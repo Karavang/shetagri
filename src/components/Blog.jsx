@@ -16,7 +16,8 @@ const Blog = () => {
         axios.defaults.baseURL = "https://shetagri-back.onrender.com/shetagri";
         const response = await axios.get("/");
         console.log(response);
-        setData(response.data);
+        const revertedData = response.data.reverse();
+        setData(revertedData);
 
         setLoading(false);
       } catch (error) {
